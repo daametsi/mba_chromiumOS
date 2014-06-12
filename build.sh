@@ -22,7 +22,7 @@ mv .git.bak .git
 
 #build image
 
-cd ../scripts
+cd ~/truck/src/scripts
 
 ./build_image --board=${BOARD} --noenable_rootfs_verification dev
 
