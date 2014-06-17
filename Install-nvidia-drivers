@@ -1,0 +1,38 @@
+
+#sign in as root
+#sudo bash
+
+#install gcc compiler and binutils for 'ld'
+crew install gcc binutils
+
+#link cc to gcc non-symbolically
+ln -s /usr/local/bin/gcc /usr/bin/local/cc
+
+#remount /tmp as execuatable
+mount -o remount,exec /tmp
+
+#remount / as rw
+mount -o remount,rw /
+
+#remount /var as rw
+mount -o remount,rw /var
+
+sh ./NVIDIA-Linux-x86_64-331.79
+
+#creation time: Tue Jun 17 06:00:17 2014
+#installer version: 331.79
+
+#PATH: /bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/opt/bin
+
+#nvidia-installer command line:
+    ./nvidia-installer
+
+#Using: nvidia-installer ncurses user interface
+#WARNING: Skipping the runlevel check (the utility `runlevel` failed to run).
+#-> License accepted.
+#-> Installing NVIDIA driver version 331.79.
+#ERROR: You do not appear to have libc header files installed on your system.
+#Please install your distribution's libc development package.
+#ERROR: Installation has failed.  Please see the file '/var/log/nvidia-installer.log'
+#for details.  You may find suggestions on fixing installation problems in the README
+#available on the Linux driver download page at www.nvidia.com.
