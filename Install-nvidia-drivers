@@ -5,16 +5,16 @@
 #install gcc compiler and binutils for 'ld'
 crew install gcc binutils
 
-#link cc to gcc non-symbolically
+#link cc to gcc symbolically
 ln -s /usr/local/bin/gcc /usr/bin/local/cc
 
-#remount /tmp as execuatable
+#remount /tmp as execuatable (possibly only necessary if liveUSB)
 mount -o remount,exec /tmp
 
-#remount / as rw
+#remount / as rw (possibly only necessary if liveUSB)
 mount -o remount,rw /
 
-#remount /var as rw
+#remount /var as rw (possibly only necessary if liveUSB)
 mount -o remount,rw /var
 
 sh ./NVIDIA-Linux-x86_64-331.79
