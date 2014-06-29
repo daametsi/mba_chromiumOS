@@ -33,3 +33,4 @@ cd ~/truck/src/scripts
   #copy kernel to /EFI-SYSTEM/efi/boot/
   #cp ${BUILD_DIR}/arch/${TARGET_ARCH}/boot/bzImage ${USBDRIVE}/EFI-SYSTEM/efi/boot/
   #configure /EFI-SYSTEM/efi/boot/grub.cfg to boot kernel
+cros flash usb:// ${BOARD}/latest
