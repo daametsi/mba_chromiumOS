@@ -6,7 +6,7 @@ export BOARD=???-generic
 
 export TARGET_ARCH=???
 
-export TOOLCHAIN=/usr/bin/i686-pc-linux-gnu-
+export TOOLCHAIN=/usr/bin/x86_64-pc-linux-gnu-
 
 
 #configure kernel
